@@ -12,3 +12,4 @@ FROM (	SELECT u.id user_id
 					WHERE os."key" = 'Closed' ) AS oc
 			ON u.id = oc.user_id
 		GROUP BY u.id ) AS f
+		
